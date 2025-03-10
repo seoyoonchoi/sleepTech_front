@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>input tag의 type 속성</h1>
+  <h2>1. text password 속성값</h2>
+  <form >
+    <label>
+      아이디
+      <input type="text" size = "10" value="qwe123" maxlength="5"/>
+    </label>
+    <br/>
+    <label>
+      비밀번호 숫자 영문자 혼합 
+      <input type="password" maxlength="8" size="10">
+    </label>
+  </form>
+
+  <h2>2. Search &URL EMAIL TEL 속성값</h2>
+  <!-- text 입력을 기본으로 하고 있으면 각 용도에 맞게 기능을 추가하였음 
+  *시각적으로는 text 필드와 동일함
+    -->
+
+    <input type="search">
+    <input type="url">
+    <input type="email">
+    <input type="tel">
+
+    <form>
+      <ul>배송정보
+        <li>
+          <label for="search item">상품검색</label>
+          <input type="search" id="search-item">
+        </li>
+        <li>
+          <label for="commend-site">상품구매 추천 사이트</label>
+          <input type="url" id = "commend-site"/>
+
+        </li>
+        <li>
+          <label>
+            구매자 이메일
+            <input type="email">
+          </label>
+        </li>
+
+        <li><label>구매자 연락처
+          <input type="tel" >
+        </label></li>
+
+
+      </ul>
+
+
+    </form>
+
+    <h2>3. checkbox&Radio 속성값</h2>
+    <!-- 여러 항목 중에서 원하는 항목을 선택 -->
+
+    <p>2025 프로야구 가을야구 진출팀 예측</p>
+    <form>
+
+      <!-- form 은 데이터 전송을 위한 도구이다. checkbox 와 radio 속성은 서버에 데이터 잔달할 값을 value속성을 사용하여 지정하게 된다. -->
+    <label>
+      <input type="checkbox"/> 롯데 자이언츠
+    </label>
+    <label>
+      <input type="checkbox"/> 두산 베어스
+    </label>
+    <label>
+      <input type="checkbox"/> 기아 타이거즈즈
+    </label>
+    <label>
+      <input type="checkbox"/> 엘지 트윈스스
+    </label>
+
+    <fieldset>
+      <legend>2025프로야구 우승팀 예측 이벤트 결과 문자수신동의 </legend>
+      <label for="agree">동의함</label>
+      <input type="radio" id = "agree" name = "message"/>
+      <br/>
+      <label for="disagree">동의안함</label>
+      <input type="radio" id = "disagree" name = "message"/>
+
+
+    </fieldset>
+
+
+
+
+
+
+  </form>
+</body>
+</html>

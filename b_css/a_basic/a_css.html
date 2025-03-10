@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a_css.html</title>
+  <!-- 내부 스타일 시트 -->
+   <style>
+    /* 
+     css 주석(슬래시+별표로 표시)
+
+     ==내부 스타일 규칙
+     선택자{ 속성: 값; 
+     }
+    
+    */
+
+    h1{
+      color: blue;
+      font-style: italic;
+
+    }
+
+    p{
+      background-color: black;
+      color : white;
+    }
+   </style>
+   <link rel="stylesheet" href="a_css.css">
+</head>
+<body>
+  <!-- !CSS
+   웹 페이지의 시각적 요소를 제어하는 스타일 시트 언어
+   -CSS3
+   cf) HTML5
+   
+   
+   *CSS Style 기본구문
+  선택자 : 스타일을 적용할 HTML요소를 지정한다. 
+  선언 : {}중괄호로 감싼 형식이나 여러 속성과 값을 포함한다.  {
+  속성 1 : 값1;
+  속성 2 : 값2;
+  속성 3 : 값3;
+  }
+
+  !CSS 스타일 규칙
+(선택자+선언)을 한군데에 묶은 것
+? 1) 브라우저 웹문서 기본 스타일
+ 각 태그가 가진 스타일일
+   -->
+ <h1>제목이 가진 스타일</h1>
+ <p>문단이 가진 스타일</p>
+ <a href="example.com">링크가 가진 스타일</a>
+
+ <!--
+ ?2) 사용자 스타일
+ : 사이트 제작자가 만드는 스타일
+ -인라인 스타일
+ -내부 스타일 시트
+ -외부 스타일 시트 -->
+
+ <h1 style="font-size: medium; font-weight:400 ;">인라인인이 가진 스타일h1</h1>
+ <p style = "font-size: x-large; font-weight: 900;">인라인 가진 스타일p</p>
+</body>
+</html>
