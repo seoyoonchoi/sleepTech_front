@@ -1,0 +1,36 @@
+#container{
+  width: 100px;
+  margin: 20px auto;
+}
+
+h1{
+  text-align: center;
+}
+
+.dog-list{
+  list-style: none;
+  padding: 0;
+}
+
+.doglist li{
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.doglist img{
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  /*요소의 쌓임 순서를 결정한다. position static이 아닌 경우에만 사용 가능하다.*/
+}
+
+.dog-list .caption{
+  position: absolute;
+  /* 요소의 쌓임 순서에 img가 더 높은 순서를 차지하기 때문문 */
+  z-index: 10;
+}

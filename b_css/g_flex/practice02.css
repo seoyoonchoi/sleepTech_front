@@ -1,0 +1,56 @@
+#container{
+  border: 1px solid black;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner{
+
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#first{
+  background-color: lightblue;
+}
+
+#second{
+  background-color: lightsalmon;
+}
+
+
+.box{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  
+}
+
+/* #case1{
+  background-color: red;
+  flex: 1;
+
+}
+
+#case2{
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: orange;
+  flex: 2;
+}
+
+#case3{
+  background-color: yellow;
+  flex: 3;
+}
+
+#case4{
+  background-color: green;
+  flex:4
+} */
+

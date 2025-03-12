@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li{
+      display: inline-block;
+      border: 1px solid #222;
+      padding: 10px;
+      margin: 0 20px;
+    }
+
+    nav ul li:hover{
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- !배치하다
+    : 페이지 요소의 배치 방법
+    cf) 블록 레벨 요소vs 인라인 레벨 요소
+    블록 : 전체 너비를 차지한다.
+    *속성값
+    block: 인라인을 블록요소로 변환
+    inline: 블록요소를 인라인으로 변환
+    inline-block :  인라인 요소처럼 같은 줄에 표시한다
+    none: 아무것도 없음을 나타냄. 해당 요소를 화면에 표시하지 않겠다
+    -->
+
+    <!-- display : 수평 네비게이션 -->
+
+    <nav>
+      <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+        <li>menu 3</li>
+        <li>menu 4</li>
+      </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* 전체선택자는 *기호를 사용한다. */
+
+
+*{
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+/* 타입선택자 */
+h2{
+  color: blue;
+  background-color: gray;
+}
+
+/* p{
+  color: green;
+} */
+
+ul{
+  background-color: lightblue;
+}
+
+/* 클래스 아이디 선택자 */
+
+.btn{
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.primary{
+  background-color: greenyellow;
+  color: blue;
+}
+
+#basic{
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+/*그룹선택자 : 태그 클래스 아이디 선택자를 나열하여 스타일 중복적용이 가능하다.*/
+.secondary, li{
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+
+/*자손선택자이자 하위선택자 : 공백을 사용하여 적용한다
+A B{...}
+>>> A내의 모든 B에 적용된다*/
+div p{
+  color: black;
+  background-color: yellow;
+  font-weight: 400;
+}
+
+/* A의 직접적인 자식 B에만 적용한다 > */
+div > p{
+  color: red;
+}
+
+
+/* 인접형제 선택자 : 같은 부모를 가진 행제 중 첫번 째 동생 요소에만 적용한다. +기호를 사용한다. */
+#selector + span{
+  text-decoration:line-through;
+  color: black;
+}
+
+/* 형제 선택자
+형제 요소에는 모두 적용한다.
+~을 사용한다.
+A~B{...}
+
+*/
+
+#all~span{
+  text-decoration: underline;
+}
+
+/* 속성 선택자
+해당 속성명을 가진 요소이다.
+
+?태그선택자 [속성명]
+
+*/
+
+input[value]{
+  background-color: lightblue;
+
+}
+
+/* [속성=값] 선택자
+주어진 속성과 속성값이 일치하는 요소 태그 [속성명=값] */
+
+div[class~="divs"]{
+  border: 3px solid blue;
+}
+
+/* 
+*4. [속성^="값"]
+:특정 값으로 시작되는 요소
+*/
+
+a[href^="https://"]{
+  /* 하나의 요소 내의 이동시(a태그사용경우) id 값을 지정하거나 하나의 프로젝트에서 이동 시 파일경로가 지정되는 경우가 있다. 외부의 사이트로 이동한다는 표시가 될 수 있다.  */
+  background-color: goldenrod;
+}
+
+/* 
+
+*5. [속성$="값"]
+특정 값으로 끝나는 요소
+*/
+
+a[href$=".com"]{
+  color: black;
+}
+
+/* 
+
+*6. [속성*="값"]
+값의 일부가 일치하는 속성의 요소
+*/
+*[class*="example"]{
+  color: aqua;
+}

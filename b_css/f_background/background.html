@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .background{
+      width: 100px;
+      height: 150px;
+      padding: 20px;
+      border: 5px dotted #222;
+      background-color: #ffd9a0;
+      display: inline-block;
+    }
+
+    #border{background-clip: border-box;}
+    #padding{background-clip: padding-box;}
+    #content{background-clip: content-box;}
+
+    #images{
+      width:100%;
+      height: 1000px;
+    }
+
+    .image{
+      width: 100%;
+      height: 100%;
+      background-image: url("../heart-9360465_1280.jpg");
+      border: 30px dotted #ccc;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 
+  1. CSS 상속
+  : 하위 요소에 대해 CSS 속성을 지정하지 않는 경우 기본적으로 상위 요소에 적용된 타입이 부여된다. 
+  !background color 속성: 배경색을 지정
+    -->
+
+    <div style = "font-size : 20px; color: lightcoral;">
+      <!-- 상위요소의 스타일이 상속 -->
+      <p>3/11화 LGvsLOTTE</p>
+    </div>
+
+
+
+    <div>
+      <div class="background" id="boarder">보더</div>
+      <div class="background" id="padding">패딩</div>
+      <div class="background" id="content">컨텐트</div>
+    </div>
+
+    <hr/>
+    <div id="images">
+      <div class="image"></div>
+      <div class="image"></div>
+    </div>
+    
+</body>
+</html>

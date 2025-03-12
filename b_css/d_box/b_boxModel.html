@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #lotte{
+      width: 100px;
+      height: 250px;
+      background-color: lightblue;
+      padding: 10px;
+      border: 5px solid black;
+      /* box-sizing: border-box; */
+    }
+
+    #runner-up{
+      width: 100px;
+      height: 250px;
+      background-color: lightcoral;
+    }
+    /* 인라인 레벨 요소는 크기값을 지정할 수 없다 >>내용이 가진 양 만큼 차지하기 때문 */
+  </style>
+</head>
+<body>
+  <!-- 
+  *박스모델(Box Model)
+  블록레벨 요소에만 적용된다.
+  cf) 블록레벨 : 요소의 넓이가 100%차지
+      인라인 레벨 : 요소의 넓이가 내용(콘텐츠) 만큼만 차지
+  -->
+  <h2>2025프로야구 우승팀</h2>
+
+  <div id = "lotte">로테 자이언츠 
+    <p id ="winner">연고지 : 부산 / 감독:김태형</p>
+  </div>
+
+  <div id="kia" >
+    기아 타이거즈
+    <span id = "runner-up">연고지 : 광주 / 감독: 이범호</span>
+  </div>
+</body>
+</html>

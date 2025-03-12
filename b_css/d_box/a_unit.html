@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    :root{
+      /* 페이지 전체에 쓰일 변수를 선언하는 방식 */
+      --primary-color : #5a67d8;
+      --secondary-color : #48bb78;
+      --accent-color: #edf2f7;
+      --background-color : #cccccc;
+    }
+    *{
+      font-size: 12px;
+    }
+
+    #vwvh{
+      background-color: aqua;
+      width: 50vw;
+      height: 50vh;
+      font-size: 1.5rem;
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- CSS 형식 스타일
+   선택자{
+   속성1: 속성값1;
+   속성2: 속성값2;
+   }
+   
+   cf) CSS 스타일 규칙
+   : 속성과 값의 한 쌍
+   - 여러개 나열의 경우 ;로 구분
+
+   ?CSS 단위 - 길이와 거리
+   1. 절대길이 : px ==> 웹 브라우저의 글자크기는 16px
+   2. 상대길이 : %(퍼센트), rem, em/vw,vh
+      1) rem(root+em),em(현재요소의 글자크기를 기준)
+        >> font size 의 속성값에 비례해서 결정되는 값
+        ex) 기본 1rem 값 : 16px
+    
+   -->
+
+  <p style = "font-size: 16px;">절대길이</p>
+  <p style = "font-size: 1rem;">이지수</p>
+  <div style = "font-size: 20px;">
+    <p style="font-size: 1rem;">상대길이 -rem</p>
+    <p style="font-size: 1em;">상대길이 em</p>
+  </div>
+
+  <div id = "vwvh">
+    상대길이 -vw/vh
+  </div>
+<!-- 백분율은 직접적인 부모요소의 크기가 지정되지않은 경우이고 크기값이 지정된 조상요소의 크기를 기준으로 설정된다. -->
+  <div style="width: 300px; height: 300px; background-color: coral;">
+    <div style = "background-color: lightgoldenrodyellow; width: 50%; height: 50%;">
+        백분율
+    </div>
+  </div>
+  
+
+  <!-- 시간단위
+   ?시간
+   1s(초) == 1000ms
+   
+   ?색상
+   -16진수 :#기호 +숫자 6자리
+   cf)축약형 #rlgh+tntwk 3wk
+   -hsl/hsla
+   -rgb/rgba : red green blue 를 0~255까지 표현(a : 투명도 0~1)
+   -영문명 : orange purple pink
+
+   ?이미지
+   :url() - url('이미지 파일 경로')
+
+   ?기타함수
+   1 calc
+   -->
+
+   <div style = "width: 100%; height: 200px; background-color: var(--primary-color); color: var(--accent-color);"> 외부 div</div>
+   <div style="width: calc(100%-20px); background-color: gray;"></div>
+</body>
+</html>

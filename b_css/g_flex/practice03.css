@@ -1,0 +1,29 @@
+#container{
+  border: 1px solid black;
+  width: 500;
+  height: 400px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  margin: 5px 0;
+
+
+}
+
+.box{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  flex: 1;
+  margin: 5px;
+}
+
+.box.large{
+  flex: 2;
+}
