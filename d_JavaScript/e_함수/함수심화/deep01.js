@@ -1,8 +1,8 @@
 function funcType(){}
 console.log(typeof funcType);
 
-function print(index)
-console.log(`${index}번째 함수 호출`);
+// function print(index)
+// console.log(`${index}번째 함수 호출`);
 
 function callback1(callbackFunc){
 
