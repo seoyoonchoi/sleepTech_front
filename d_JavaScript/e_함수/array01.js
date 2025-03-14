@@ -16,4 +16,7 @@ console.log(sports[1]);
 sports[2] = 'basketBall';
 console.log(sports);
 
-const bas
+let newfruit = ['apple','banana'];
+let newLength = newfruit.push('cherry');
+console.log(newLength);
+console.log(newfruit);
