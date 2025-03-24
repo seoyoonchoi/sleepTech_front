@@ -28,5 +28,38 @@ form.addEventListener('submit', (e) => {
 function updateTodoList(){
   //모든 할일 목록을 갖고오기
   const todos = todoManager.getTodos();
+  todoList.innerHTML = '';
   
+  todos.forEach(todo => {
+    const li = document.createElement('li');
+    li.textContent = todo.text;
+
+    if(todo.completed){
+      li.classList.add('completed');
+    }else{
+      li.classList.remove('completed');
+    }
+
+    li.addEventListener('click', () => {
+      todoManager.toggleCompleted(todo.id);
+      updateTodoList();
+    });
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'X';
+    deleteButton.classList.add('delete-button');
+
+    //삭제 버튼 클릭 시 해당 할 일 항목 제거
+    deleteButton.addEventListener('click', () => {
+      todoManager.removeTodo(todo.id);
+      updateTodoList();
+    });
+
+    li.appendChild(deleteButton);
+    todoList.appendChild(li);
+
+  });
+
 }
+
+updateTodoList();
